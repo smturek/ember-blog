@@ -1,0 +1,13 @@
+<div class="title">
+  <h1>Blog</h1>
+  <p>{{#link-to 'posts.new'}}New Post{{/link-to}}<p>
+</div>
+
+<div class="sidebar">
+  <h2>Recent Posts</h2>
+  {{#each post in model}}
+    <h4>{{#link-to 'post' post.id post=post}}{{post.title}}{{/link-to}}</h4>
+  {{/each}}
+</div>
+
+{{outlet}}

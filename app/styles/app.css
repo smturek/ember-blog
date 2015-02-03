@@ -1,3 +1,40 @@
 html, body {
   margin: 20px;
 }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.title {
+  border-bottom: 1px solid black;
+}
+
+.title h1 {
+  display: inline-block;
+  width: 94.5%;
+  margin-bottom: 0px;
+}
+
+.title p {
+  display: inline-block;
+  text-align: right;
+}
+
+.sidebar {
+  float: left;
+  border-right: 1px solid black;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.input {
+  outline: black;
+  resize: none;
+  overflow: auto;
+  width: 75.0%;
+  border: none;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
