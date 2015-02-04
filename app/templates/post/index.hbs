@@ -1,7 +1,11 @@
-<h2>{{title}}</h2>
+<div class="post">
 
-{{body}}
+  <h2>{{title}}</h2>
 
-<button {{action 'deletePost' model}}>Delete Post</button>
+  {{body}}
 
-{{#link-to 'post.edit' model}}Edit Post{{/link-to}}
+  <button {{action 'deletePost' model}}>Delete Post</button>
+
+  {{#link-to 'post.edit' model}}Edit Post{{/link-to}}
+
+</div>

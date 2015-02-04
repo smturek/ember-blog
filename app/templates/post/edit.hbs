@@ -1,7 +1,7 @@
 <h2>Edit Post</h2>
 
-{{input value=postTitle placeholder=title class="input"}}
+{{input value=title placeholder=title class="input"}}
 
-{{textarea value=postBody placeholder=body rows='6' class="input"}}
+{{textarea value=body placeholder=body rows='6' class="input"}}
 
 <button {{action 'editPost' model}}>Update Post</button>

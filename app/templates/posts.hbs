@@ -6,7 +6,7 @@
 <div class="sidebar">
   <h2>Recent Posts</h2>
   {{#each post in model}}
-    <h4>{{#link-to 'post' post.id post=post}}{{post.title}}{{/link-to}}</h4>
+    <h4>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h4>
   {{/each}}
 </div>
 

@@ -2,10 +2,11 @@ import Ember from "ember";
 
 export default Ember.ObjectController.extend({
   actions: {
-    editPost: function(foo) {
-      var post = this.store.find('post', foo.id);
-      post.set('title', 'postTitle');
-      post.set('body', 'postBody');
+    editPost: function(post) {
+      var title = this.get('title');
+      var body = this.get('body')
+      post.set('title', title);
+      post.set('body', body);
       post.save();
       this.transitionToRoute('posts');
     }

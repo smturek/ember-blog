@@ -11,6 +11,7 @@ export default Ember.ArrayController.extend({
     },
 
     deletePost: function(post) {
+        console.log(post);
         post.destroyRecord();
         this.transitionToRoute('posts');
     }
