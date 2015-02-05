@@ -1,5 +1,6 @@
 html, body {
   margin: 20px;
+  height: auto;
 }
 
 *, *:before, *:after {
@@ -26,14 +27,15 @@ html, body {
   border-right: 1px solid black;
   margin-right: 10px;
   padding-right: 10px;
-  min-height: 100px;
+  min-height: 580px;
+  height: auto;
 }
 
 .input {
   outline: black;
   resize: none;
   overflow: auto;
-  width: 75.0%;
+  width: 100%;
   border: none;
   padding: 10px;
   border: 1px solid black;

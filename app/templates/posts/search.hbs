@@ -1,0 +1,15 @@
+<div class="post">
+  <h2>Search the Blog</h2>
+
+  {{input value=searchParam placeholder="Search..." class="input"}}
+
+  <button {{action 'search'}}>Search</button>
+
+</div>
+
+<div class="post">
+  <h1 class="title">Search Results</h1>
+  {{#each post in model}}
+    <h4>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h4>
+  {{/each}}
+</div>

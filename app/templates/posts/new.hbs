@@ -1,5 +1,11 @@
-<p>New Post</p>
+<div class='post'>
 
-{{input value=postTitle placeholder="Enter note title here"}}
+  <h2>New Post</h2>
 
-<button {{action 'newPost'}}>Create New Post</button>
+  {{input value=postTitle placeholder="Enter post title here" class="input"}}
+
+  {{textarea value=postBody placeholder="Write your post here" rows='6' class="input"}}
+
+  <button {{action 'newPost'}}>Create New Post</button>
+
+</div>
